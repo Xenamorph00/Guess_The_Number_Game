@@ -5,18 +5,13 @@
 int main() {
 
 int userNum = 0, attemps = 5 ;
-
 time_t rawtime;
 struct tm * timeinfo;
-
 time ( &rawtime );
 timeinfo = localtime ( &rawtime );
-
 srand(time(NULL));  
 int radNum = rand() % 21; 
-
 printf ("\t\t\t\t\t\t\t\tCurrent local time and date: %s", asctime (timeinfo));
-
 puts("\t\t\t\aWelcome to Guess the Number !"
     "\n\nRULES:"
     "\n\n---------------------------------------------------------------------\n"
@@ -24,7 +19,6 @@ puts("\t\t\t\aWelcome to Guess the Number !"
     "*You should only enter numbers from 0 to 20 ; both 0 and 20 included\n"
     "\t\t\t\tGOOD LUCK!"
     "\n---------------------------------------------------------------------\n") ;
-
 while(userNum != radNum){
 
     printf("\nEnter a number: ") ;
