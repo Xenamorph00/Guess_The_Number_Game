@@ -5,11 +5,14 @@
 int main() {
 int userNum = 0, attemps = 5 ;
 time_t rawtime;
+
 struct tm * timeinfo;
 time ( &rawtime );
 timeinfo = localtime ( &rawtime );
 srand(time(NULL));  
+
 int radNum = rand() % 21; 
+
 printf ("\t\t\t\t\t\t\t\tCurrent local time and date: %s", asctime (timeinfo));
 
 puts("\t\t\t\aWelcome to Guess the Number !"
