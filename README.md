@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 int main() {
 int userNum = 0, attemps = 5 ;
 time_t rawtime;
@@ -10,6 +11,7 @@ timeinfo = localtime ( &rawtime );
 srand(time(NULL));  
 int radNum = rand() % 21; 
 printf ("\t\t\t\t\t\t\t\tCurrent local time and date: %s", asctime (timeinfo));
+
 puts("\t\t\t\aWelcome to Guess the Number !"
     "\n\nRULES:"
     "\n\n---------------------------------------------------------------------\n"
