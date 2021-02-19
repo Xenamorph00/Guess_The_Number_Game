@@ -1,9 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
 int main() {
-
 int userNum = 0, attemps = 5 ;
 time_t rawtime;
 struct tm * timeinfo;
