@@ -6,20 +6,15 @@ int main() {
 
 int userNum = 0, attemps = 5 ;
 
-//Current time.
 time_t rawtime;
 struct tm * timeinfo;
 
 time ( &rawtime );
 timeinfo = localtime ( &rawtime );
 
-srand(time(NULL));   // Initialization, should only be called once.
-int radNum = rand() % 21; // random int between 0 and 20.
+srand(time(NULL));  
+int radNum = rand() % 21; 
 
-//Structuring attempt functionality.
-
-
-//Rules of the game and local time.
 printf ("\t\t\t\t\t\t\t\tCurrent local time and date: %s", asctime (timeinfo));
 
 puts("\t\t\t\aWelcome to Guess the Number !"
@@ -31,11 +26,10 @@ puts("\t\t\t\aWelcome to Guess the Number !"
     "\n---------------------------------------------------------------------\n") ;
 
 while(userNum != radNum){
-//User enters a number.
+
     printf("\nEnter a number: ") ;
     scanf("%d", &userNum) ;
 
-//Conditions
     if(userNum == radNum && attemps == 5) {
         printf("\nCONGRATS you got it on the first try!\n") ;
         break ;
