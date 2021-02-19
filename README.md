@@ -42,9 +42,7 @@ while(userNum != radNum){
         printf("\nYou've run out of attemps.") ;
         break ;
     }
-
-
-
+    
     else if(userNum != radNum) {
         if(userNum == (radNum - 1)) {
             printf("\nYou have %d attemps left.\n", attemps) ;
